@@ -1,0 +1,13 @@
+(sym_lib_table
+  (lib (name Capacitors_Smd0603)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Capacitors/Smd_0603/Capacitors_Smd0603.lib)(options "")(descr ""))
+  (lib (name Resistors_Smd0603)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Resistors/Smd_0603/Resistors_Smd0603.lib)(options "")(descr ""))
+  (lib (name Switching_Regulators)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Dc_Dc_Regulators/Switching/Switching_Regulators.lib)(options "")(descr ""))
+  (lib (name Diodes)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Diodes/Diodes.lib)(options "")(descr ""))
+  (lib (name Touch_Sensors)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Touch_Sensors/Touch_Sensors.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Power_Signs/power.lib)(options "")(descr ""))
+  (lib (name Fpc_Connectors)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Connectors/Fpc_Connectors/Fpc_Connectors.lib)(options "")(descr ""))
+  (lib (name Lcd_Backlight_Drivers)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Lcd_Backlight_Drivers/Lcd_Backlight_Drivers.lib)(options "")(descr ""))
+  (lib (name Inductors)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Inductors/Inductors.lib)(options "")(descr ""))
+  (lib (name Display_Lcd)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Displays/Lcd_Display/Display_Lcd.lib)(options "")(descr ""))
+  (lib (name Goldpin_2_54mm)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Goldpins/Goldpin_2_54mm.lib)(options "")(descr ""))
+)

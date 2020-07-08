@@ -1,0 +1,257 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 3 5
+Title "LCD Backlight"
+Date "2020-05-15"
+Rev "V1.0"
+Comp "Embedded System Labs"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Lcd_Backlight_Drivers:DIO5661ST6 U?
+U 1 1 5EBF1191
+P 8400 5950
+AR Path="/5F06901E/5EBF1191" Ref="U?"  Part="1" 
+AR Path="/5F069040/5EBEC17D/5EBF1191" Ref="U2"  Part="1" 
+F 0 "U2" H 8400 6637 60  0000 C CNN
+F 1 "DIO5661ST6" H 8400 6531 60  0000 C CNN
+F 2 "Lcd_Backlight_Drivers:DIO5661ST6" H 8450 6750 50  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/802/dioo_06292016_DIO5661V0%204-1217651.pdf" H 8450 6750 50  0001 C CNN
+F 4 "DIOO Microcircuits" H 8450 6750 50  0001 C CNN "Manufacturer"
+F 5 "DIO5661ST6" H 8450 6750 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Mouser" H 8450 6750 50  0001 C CNN "Supplier"
+F 7 "453-DIO5661ST6" H 8450 6750 50  0001 C CNN "Supplier Part Number"
+F 8 "https://pl.mouser.com/ProductDetail/DIOO-Microcircuits/DIO5661ST6?qs=sGAEpiMZZMsE420DPIasPq%2FmHDtD%252BVbwyQPPyUwiraQPcf8jrGWJFQ%3D%3D" H 8650 6650 50  0001 C CNN "URL"
+F 9 "1,35" H 8450 6750 50  0001 C CNN "Price@1pc"
+F 10 "0,382" H 8450 6750 50  0001 C CNN "Price@1000pcs"
+F 11 "MW" H 8450 6750 50  0001 C CNN "Developer"
+F 12 "SOT-23-6" H 8450 6750 50  0001 C CNN "Package"
+F 13 "C324576" H 8450 6750 50  0001 C CNN "LCSC Part # (optional)"
+	1    8400 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4950 9000 4950
+Wire Wire Line
+	9000 4950 9000 5550
+Wire Wire Line
+	9000 5550 8850 5550
+Wire Wire Line
+	8100 4950 7800 4950
+Wire Wire Line
+	7800 4950 7800 5550
+Wire Wire Line
+	7800 5550 7950 5550
+$Comp
+L power:GND #PWR?
+U 1 1 5EBF6A98
+P 7850 6350
+AR Path="/5F06901E/5EBF6A98" Ref="#PWR?"  Part="1" 
+AR Path="/5F069040/5EBEC17D/5EBF6A98" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 7850 6450 30  0001 C CNN
+F 1 "GND" H 7850 6250 30  0001 C CNN
+F 2 "" H 7850 6350 60  0000 C CNN
+F 3 "" H 7850 6350 60  0000 C CNN
+	1    7850 6350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 6350 7850 6350
+$Comp
+L Capacitors_Smd0603:10uF_0603 C?
+U 1 1 5EBF9FEA
+P 7600 5200
+AR Path="/5F06901E/5EBF9FEA" Ref="C?"  Part="1" 
+AR Path="/5F069040/5EBEC17D/5EBF9FEA" Ref="C2"  Part="1" 
+F 0 "C2" H 7800 5100 50  0000 R CNN
+F 1 "10uF/10V" H 8050 5300 50  0000 R CNN
+F 2 "Capacitors_Smd_0603:10uF_10V_0603" V 7450 5200 157 0001 C CNN
+F 3 "https://www.tme.eu/Document/08070be221b22b3ff38fe1f90e5753ee/C0603C106M9PACTU.pdf" V 7450 5200 157 0001 C CNN
+F 4 "KEMET" H 7600 5200 50  0001 C CNN "Manufacturer"
+F 5 "C0603C106M9PACTU" H 7600 5200 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TME" H 7600 5200 50  0001 C CNN "Supplier"
+F 7 "C0603C106M9PAC" H 7600 5200 50  0001 C CNN "Supplier Part Number"
+F 8 "https://www.tme.eu/pl/details/c0603c106m9pac/kondensatory-mlcc-smd-0603/kemet/c0603c106m9pactu/" H 7600 5200 50  0001 C CNN "URL"
+F 9 "0,81309" H 7600 5200 50  0001 C CNN "Price@1pc"
+F 10 "0,20713" H 7600 5200 50  0001 C CNN "Price@1000pcs"
+F 11 "MW" H 7600 5200 50  0001 C CNN "Developer"
+F 12 "0603" H 7600 5200 50  0001 C CNN "Package"
+F 13 "C162265" H 7600 5200 50  0001 C CNN "LCSC Part # (optional)"
+	1    7600 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7600 5000 7600 4950
+Wire Wire Line
+	7600 4950 7800 4950
+Connection ~ 7800 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5EC01F88
+P 7600 5450
+AR Path="/5F06901E/5EC01F88" Ref="#PWR?"  Part="1" 
+AR Path="/5F069040/5EBEC17D/5EC01F88" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 7600 5550 30  0001 C CNN
+F 1 "GND" H 7600 5350 30  0001 C CNN
+F 2 "" H 7600 5450 60  0000 C CNN
+F 3 "" H 7600 5450 60  0000 C CNN
+	1    7600 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5400 7600 5450
+$Comp
+L Diodes:MBR0520L D?
+U 1 1 5EC05BAB
+P 9500 4950
+AR Path="/5F06901E/5EC05BAB" Ref="D?"  Part="1" 
+AR Path="/5F069040/5EBEC17D/5EC05BAB" Ref="D2"  Part="1" 
+F 0 "D2" H 9500 5143 40  0000 C CNN
+F 1 "MBR0520L" H 9500 5067 40  0000 C CNN
+F 2 "Diodes:MBR0520L_SOD123" H 9500 4950 60  0001 C CNN
+F 3 "Components_Documentation/MBR0520L.pdf" H 9500 5082 60  0001 C CNN
+	1    9500 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 4950 9000 4950
+Connection ~ 9000 4950
+$Comp
+L Resistors_Smd0603:10R_0603 R?
+U 1 1 5EC088E8
+P 9000 6350
+AR Path="/5F06901E/5EC088E8" Ref="R?"  Part="1" 
+AR Path="/5F069040/5EBEC17D/5EC088E8" Ref="R4"  Part="1" 
+F 0 "R4" H 9068 6396 50  0000 L CNN
+F 1 "10R" H 9068 6305 50  0000 L CNN
+F 2 "Resistor_Smd_0603:10R_0603" H 9000 6350 50  0001 C CNN
+F 3 "/home/mw/kicad_library/Schematic/Resistors/Smd_0603/Components_Documentation/Vishay_Resistors_SM0603.pdf" H 9000 6350 50  0001 C CNN
+F 4 "0603" H 9000 6350 50  0001 C CNN "Package"
+	1    9000 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 5950 9000 5950
+Wire Wire Line
+	9000 5950 9000 6100
+$Comp
+L power:GND #PWR?
+U 1 1 5EC093C9
+P 9000 6700
+AR Path="/5F06901E/5EC093C9" Ref="#PWR?"  Part="1" 
+AR Path="/5F069040/5EBEC17D/5EC093C9" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 9000 6800 30  0001 C CNN
+F 1 "GND" H 9000 6600 30  0001 C CNN
+F 2 "" H 9000 6700 60  0000 C CNN
+F 3 "" H 9000 6700 60  0000 C CNN
+	1    9000 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 6600 9000 6700
+$Comp
+L Capacitors_Smd0603:1uF_0603 C?
+U 1 1 5EC0CD16
+P 9950 5250
+AR Path="/5F06901E/5EC0CD16" Ref="C?"  Part="1" 
+AR Path="/5F069040/5EBEC17D/5EC0CD16" Ref="C3"  Part="1" 
+F 0 "C3" H 10081 5296 50  0000 L CNN
+F 1 "1uF_0603" H 10081 5205 50  0000 L CNN
+F 2 "Capacitors_Smd_0603:1uF_0603" H 9800 5450 60  0001 C CNN
+F 3 "Capacitors/Smd_0603/Components_Documentation/KEM_C1005_Y5V_SMD.pdf" H 9800 5450 60  0001 C CNN
+F 4 "SAMSUNG" H 9950 5250 50  0001 C CNN "Manufacturer"
+F 5 "CL10B105KO8NNNC" H 9950 5250 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TME" H 9950 5250 50  0001 C CNN "Supplier"
+F 7 "CL10B105KO8NNNC" H 9950 5250 50  0001 C CNN "Supplier Part Number"
+F 8 "https://www.tme.eu/pl/details/cl10b105ko8nnnc/kondensatory-mlcc-smd-0603/samsung/" H 9950 5250 50  0001 C CNN "URL"
+F 9 "0,07530" H 9950 5250 50  0001 C CNN "Price@1pc"
+F 10 "0,03514" H 9950 5250 50  0001 C CNN "Price@1000pcs"
+F 11 "0603" H 9950 5250 50  0001 C CNN "Package"
+	1    9950 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 4950 9950 4950
+Wire Wire Line
+	9950 4950 9950 5050
+$Comp
+L power:GND #PWR?
+U 1 1 5EC0D8A2
+P 9950 5550
+AR Path="/5F06901E/5EC0D8A2" Ref="#PWR?"  Part="1" 
+AR Path="/5F069040/5EBEC17D/5EC0D8A2" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 9950 5650 30  0001 C CNN
+F 1 "GND" H 9950 5450 30  0001 C CNN
+F 2 "" H 9950 5550 60  0000 C CNN
+F 3 "" H 9950 5550 60  0000 C CNN
+	1    9950 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 5450 9950 5550
+Wire Wire Line
+	9950 4950 11300 4950
+Connection ~ 9950 4950
+Wire Wire Line
+	9000 5950 11300 5950
+Connection ~ 9000 5950
+Wire Wire Line
+	7800 5550 5600 5550
+Connection ~ 7800 5550
+Wire Wire Line
+	7950 5950 5600 5950
+Text HLabel 5600 5550 0    50   Input ~ 0
+POWER_VIN_3V3
+Text HLabel 5600 5950 0    50   Input ~ 0
+PWM
+Text HLabel 5600 5700 0    50   Input ~ 0
+POWER_VIN_GND
+$Comp
+L power:GND #PWR?
+U 1 1 5EC144F7
+P 5700 5700
+AR Path="/5F06901E/5EC144F7" Ref="#PWR?"  Part="1" 
+AR Path="/5F069040/5EBEC17D/5EC144F7" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 5700 5800 30  0001 C CNN
+F 1 "GND" H 5700 5600 30  0001 C CNN
+F 2 "" H 5700 5700 60  0000 C CNN
+F 3 "" H 5700 5700 60  0000 C CNN
+	1    5700 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 5700 5600 5700
+Text HLabel 11300 4950 2    50   Output ~ 0
+LCD_LED_A
+Text HLabel 11300 5950 2    50   Input ~ 0
+LCD_LED_K
+$Comp
+L Inductors:22uH_SMD_Coil L?
+U 1 1 5EFEE0D0
+P 8400 4950
+AR Path="/5F06901E/5EFEE0D0" Ref="L?"  Part="1" 
+AR Path="/5F069040/5EBEC17D/5EFEE0D0" Ref="L1"  Part="1" 
+F 0 "L1" V 8500 4950 50  0000 C CNN
+F 1 "22uH" V 8300 4950 50  0000 C CNN
+F 2 "Inductors:22uH_2520" H 8400 4950 50  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/281/JELF243A-9128-1699488.pdf" H 8400 4950 50  0001 C CNN
+F 4 "LQH2HPZ220MGRL" H 8400 4950 50  0001 C CNN "Manufacturer"
+F 5 "Murata Electronics" H 8400 4950 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Mouser" H 8400 4950 50  0001 C CNN "Supplier"
+F 7 "81-LQH2HPZ220MGRL" H 8400 4950 50  0001 C CNN "Supplier Part Number"
+F 8 "https://pl.mouser.com/ProductDetail/Murata-Electronics/LQH2HPZ220MGRL?qs=AlcXFAMbscDLETnCCDJVxw%3D%3D" H 8400 4950 50  0001 C CNN "URL"
+F 9 "1,9" H 8400 4950 50  0001 C CNN "Price@1pc"
+F 10 "0,708" H 8400 4950 50  0001 C CNN "Price@1000pcs"
+F 11 "MW" H 8400 4950 50  0001 C CNN "Developer"
+F 12 "2520" H 8400 4950 50  0001 C CNN "Package"
+F 13 "C375967" H 8400 4950 50  0001 C CNN "LCSC Part # (optional)"
+	1    8400 4950
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

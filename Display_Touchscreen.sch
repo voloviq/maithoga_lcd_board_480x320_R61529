@@ -1,0 +1,606 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 2 5
+Title "Display and Touchscreen"
+Date "2020-05-14"
+Rev "V1.0"
+Comp "Embedded System Labs"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7100 8200 7100 8100
+$Comp
+L Capacitors_Smd0603:100nF_0603 C1
+U 1 1 5EC94484
+P 6000 8200
+F 0 "C1" V 5850 8200 50  0000 C CNN
+F 1 "100nF/50V" V 6150 8200 50  0000 C CNN
+F 2 "Capacitors_Smd_0603:100nF_0603" H 6000 8200 60  0001 C CNN
+F 3 "Capacitors/Smd_0603/Components_Documentation/KEM_C1005_Y5V_SMD.pdf" H 6000 8200 60  0001 C CNN
+F 4 "SAMSUNG" H 6000 8200 50  0001 C CNN "Manufacturer"
+F 5 "CL10B104JB8NNNC" H 6000 8200 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TME" H 6000 8200 50  0001 C CNN "Supplier"
+F 7 "CL10B104JB8NNNC" H 6000 8200 50  0001 C CNN "Supplier Part Number"
+F 8 "https://www.tme.eu/pl/details/cl10b104jb8nnnc/kondensatory-mlcc-smd-0603/samsung/" H 6000 8200 50  0001 C CNN "URL"
+F 9 "0,04540" H 6000 8200 50  0001 C CNN "Price@1pc"
+F 10 "0,02231" H 6000 8200 50  0001 C CNN "Price@1000pcs"
+F 11 "0603" H 6000 8200 50  0001 C CNN "Package"
+	1    6000 8200
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors_Smd0603:47k_0603 R3
+U 1 1 5EC9CB76
+P 7100 8450
+F 0 "R3" H 6850 8400 50  0000 L CNN
+F 1 "47k" H 6900 8500 50  0000 L CNN
+F 2 "Resistor_Smd_0603:47k_0603" H 7100 8450 60  0001 C CNN
+F 3 "Resistors/Smd_0603/Components_Documentation/Vishay_Resistors_SM0603.pdf" H 7100 8450 60  0001 C CNN
+F 4 "0603" H 7100 8450 50  0001 C CNN "Package"
+	1    7100 8450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:3V3 #PWR010
+U 1 1 5ECA0292
+P 7100 8100
+F 0 "#PWR010" H 7100 8200 40  0001 C CNN
+F 1 "3V3" H 7050 8250 50  0000 L CNN
+F 2 "" H 7100 8100 60  0000 C CNN
+F 3 "" H 7100 8100 60  0000 C CNN
+	1    7100 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5ECA37A1
+P 6300 10350
+F 0 "#PWR09" H 6300 10450 30  0001 C CNN
+F 1 "GND" H 6300 10250 30  0001 C CNN
+F 2 "" H 6300 10350 60  0000 C CNN
+F 3 "" H 6300 10350 60  0000 C CNN
+	1    6300 10350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Touch_Sensors:TSC2007 U1
+U 1 1 5ECB44A1
+P 6300 9300
+F 0 "U1" H 6500 10100 50  0000 C CNN
+F 1 "TSC2007" H 6500 10000 50  0000 C CNN
+F 2 "Touch_Sensors:TSC2007_TSSOP16" H 6300 9700 60  0001 C CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=26&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftsc2007" H 6300 9700 60  0001 C CNN
+F 4 "Texas Instruments" H 6300 9300 50  0001 C CNN "Manufacturer"
+F 5 "TSC2007IPWR" H 6300 9300 50  0001 C CNN "Manufacturer Part Number"
+F 6 "Mouser" H 6300 9300 50  0001 C CNN "Supplier"
+F 7 "595-TSC2007IPWR" H 6300 9300 50  0001 C CNN "Supplier Part Number"
+F 8 "https://pl.mouser.com/ProductDetail/Texas-Instruments/TSC2007IPWR?qs=sGAEpiMZZMuzh7TiB2wNCaQ7D5mFbsaDp7ZvSn2f2nM%3D" H 6050 9300 50  0001 C CNN "URL"
+F 9 "9,6" H 6300 9300 50  0001 C CNN "Price@1pc"
+F 10 "4,38" H 6300 9300 50  0001 C CNN "Price@1000pcs"
+F 11 "MW" H 6300 9300 50  0001 C CNN "Developer"
+F 12 "TSSOP-16" H 6300 9300 50  0001 C CNN "Package"
+F 13 "C38398" H 6300 9300 50  0001 C CNN "LCSC Part # (optional)"
+	1    6300 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 8800 7100 8800
+Wire Wire Line
+	7100 8800 7100 8700
+$Comp
+L power:3V3 #PWR08
+U 1 1 5ECBD073
+P 6300 8100
+F 0 "#PWR08" H 6300 8200 40  0001 C CNN
+F 1 "3V3" H 6250 8250 50  0000 L CNN
+F 2 "" H 6300 8100 60  0000 C CNN
+F 3 "" H 6300 8100 60  0000 C CNN
+	1    6300 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 8100 6300 8200
+Text HLabel 3500 7550 0    50   Output ~ 0
+TOUCHSCREEN_IRQ
+Wire Wire Line
+	7100 8800 7550 8800
+Connection ~ 7100 8800
+Wire Wire Line
+	6300 10250 6300 10350
+$Comp
+L power:GND #PWR05
+U 1 1 5ECCE83F
+P 5500 9600
+F 0 "#PWR05" H 5500 9700 30  0001 C CNN
+F 1 "GND" H 5500 9500 30  0001 C CNN
+F 2 "" H 5500 9600 60  0000 C CNN
+F 3 "" H 5500 9600 60  0000 C CNN
+	1    5500 9600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 9600 5500 9600
+$Comp
+L power:GND #PWR06
+U 1 1 5ECCFFE3
+P 5500 9750
+F 0 "#PWR06" H 5500 9850 30  0001 C CNN
+F 1 "GND" H 5500 9650 30  0001 C CNN
+F 2 "" H 5500 9750 60  0000 C CNN
+F 3 "" H 5500 9750 60  0000 C CNN
+	1    5500 9750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 9750 5500 9750
+NoConn ~ 5600 8800
+Wire Wire Line
+	6200 8200 6300 8200
+Connection ~ 6300 8200
+Wire Wire Line
+	6300 8200 6300 8350
+$Comp
+L power:GND #PWR07
+U 1 1 5ECDEA2E
+P 5700 8200
+F 0 "#PWR07" H 5700 8300 30  0001 C CNN
+F 1 "GND" H 5700 8100 30  0001 C CNN
+F 2 "" H 5700 8200 60  0000 C CNN
+F 3 "" H 5700 8200 60  0000 C CNN
+	1    5700 8200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 8200 5700 8200
+$Comp
+L Resistors_Smd0603:4k7_0603 R2
+U 1 1 5ECE949E
+P 5050 8950
+F 0 "R2" H 5118 8996 50  0000 L CNN
+F 1 "4k7" H 5118 8905 50  0000 L CNN
+F 2 "Resistor_Smd_0603:4k7_0603" H 5050 8950 50  0001 C CNN
+F 3 "Resistors/Smd_0603/Components_Documentation/Vishay_Resistors_SM0603.pdf" H 5050 8950 50  0001 C CNN
+F 4 "ROYAL OHM" H 5050 8950 50  0001 C CNN "Manufacturer"
+F 5 "0603SAF4701T5E" H 5050 8950 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TME" H 5050 8950 50  0001 C CNN "Supplier"
+F 7 "	SMD0603-4K7-1%" H 5050 8950 50  0001 C CNN "Supplier Part Number"
+F 8 "https://www.tme.eu/pl/details/smd0603-4k7-1%2525/rezystory-smd-0603/royal-ohm/0603saf4701t5e/" H 5050 8950 50  0001 C CNN "URL"
+F 9 "0,04698" H 5050 8950 50  0001 C CNN "Price@1pc"
+F 10 "0,01271" H 5050 8950 50  0001 C CNN "Price@1000pcs"
+F 11 "0603" H 5050 8950 50  0001 C CNN "Package"
+	1    5050 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors_Smd0603:4k7_0603 R1
+U 1 1 5ECEB238
+P 4700 8950
+F 0 "R1" H 4768 8996 50  0000 L CNN
+F 1 "4k7" H 4768 8905 50  0000 L CNN
+F 2 "Resistor_Smd_0603:4k7_0603" H 4700 8950 50  0001 C CNN
+F 3 "Resistors/Smd_0603/Components_Documentation/Vishay_Resistors_SM0603.pdf" H 4700 8950 50  0001 C CNN
+F 4 "ROYAL OHM" H 4700 8950 50  0001 C CNN "Manufacturer"
+F 5 "0603SAF4701T5E" H 4700 8950 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TME" H 4700 8950 50  0001 C CNN "Supplier"
+F 7 "	SMD0603-4K7-1%" H 4700 8950 50  0001 C CNN "Supplier Part Number"
+F 8 "https://www.tme.eu/pl/details/smd0603-4k7-1%2525/rezystory-smd-0603/royal-ohm/0603saf4701t5e/" H 4700 8950 50  0001 C CNN "URL"
+F 9 "0,04698" H 4700 8950 50  0001 C CNN "Price@1pc"
+F 10 "0,01271" H 4700 8950 50  0001 C CNN "Price@1000pcs"
+F 11 "0603" H 4700 8950 50  0001 C CNN "Package"
+	1    4700 8950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 9300 5050 9300
+Wire Wire Line
+	5050 9300 5050 9200
+Wire Wire Line
+	5600 9450 4700 9450
+Wire Wire Line
+	4700 9450 4700 9200
+Wire Wire Line
+	5050 9300 3500 9300
+Connection ~ 5050 9300
+Wire Wire Line
+	4700 9450 3500 9450
+Connection ~ 4700 9450
+Text HLabel 3500 9300 0    50   BiDi ~ 0
+TOUCHSCREEN_SDA
+Text HLabel 3500 9450 0    50   Input ~ 0
+TOUCHSCREEN_SCL
+Wire Wire Line
+	5050 8700 5050 8600
+$Comp
+L power:3V3 #PWR04
+U 1 1 5ECF37C6
+P 5050 8600
+F 0 "#PWR04" H 5050 8700 40  0001 C CNN
+F 1 "3V3" H 5000 8750 50  0000 L CNN
+F 2 "" H 5050 8600 60  0000 C CNN
+F 3 "" H 5050 8600 60  0000 C CNN
+	1    5050 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 8700 4700 8600
+$Comp
+L power:3V3 #PWR03
+U 1 1 5ECF4DF0
+P 4700 8600
+F 0 "#PWR03" H 4700 8700 40  0001 C CNN
+F 1 "3V3" H 4650 8750 50  0000 L CNN
+F 2 "" H 4700 8600 60  0000 C CNN
+F 3 "" H 4700 8600 60  0000 C CNN
+	1    4700 8600
+	1    0    0    -1  
+$EndComp
+Text HLabel 3500 2100 0    50   Input ~ 0
+VIN_3V3
+Text HLabel 3500 2250 0    50   Input ~ 0
+VIN_GND
+$Comp
+L power:3V3 #PWR01
+U 1 1 5ECFD76B
+P 3600 2100
+F 0 "#PWR01" H 3600 2200 40  0001 C CNN
+F 1 "3V3" V 3600 2250 50  0000 L CNN
+F 2 "" H 3600 2100 60  0000 C CNN
+F 3 "" H 3600 2100 60  0000 C CNN
+	1    3600 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5ED01925
+P 3700 2250
+F 0 "#PWR02" H 3700 2350 30  0001 C CNN
+F 1 "GND" H 3700 2150 30  0001 C CNN
+F 2 "" H 3700 2250 60  0000 C CNN
+F 3 "" H 3700 2250 60  0000 C CNN
+	1    3700 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 2250 3700 2250
+Wire Wire Line
+	3600 2100 3500 2100
+$Sheet
+S 9150 2250 1300 650 
+U 5EBEC17D
+F0 "LCD Backlight" 50
+F1 "LCD_Backlight.sch" 50
+F2 "POWER_VIN_3V3" I L 9150 2350 50 
+F3 "PWM" I L 9150 2600 50 
+F4 "POWER_VIN_GND" I L 9150 2450 50 
+F5 "LCD_LED_A" O R 10450 2750 50 
+F6 "LCD_LED_K" I R 10450 2400 50 
+$EndSheet
+$Comp
+L Diodes:BAS386 D1
+U 1 1 5F1D1979
+P 11150 3000
+F 0 "D1" H 11150 3200 50  0000 C CNN
+F 1 "BAS386" H 11150 3100 50  0000 C CNN
+F 2 "Diodes:BAS386_MICROMELF" H 11150 3000 60  0001 C CNN
+F 3 "D:/Git_Kicad_Library/Schematic/Diodes/Components_Documentation/bas386.pdf" H 11150 3131 60  0001 C CNN
+	1    11150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5F1D4C8C
+P 11650 3250
+F 0 "#PWR014" H 11650 3350 30  0001 C CNN
+F 1 "GND" H 11650 3150 30  0001 C CNN
+F 2 "" H 11650 3250 60  0000 C CNN
+F 3 "" H 11650 3250 60  0000 C CNN
+	1    11650 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11650 3250 11750 3250
+$Comp
+L power:3V3 #PWR013
+U 1 1 5F1D607D
+P 10900 3000
+F 0 "#PWR013" H 10900 3100 40  0001 C CNN
+F 1 "3V3" V 10900 3100 50  0000 L CNN
+F 2 "" H 10900 3000 60  0000 C CNN
+F 3 "" H 10900 3000 60  0000 C CNN
+	1    10900 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10950 3000 10900 3000
+$Comp
+L power:3V3 #PWR012
+U 1 1 5F1F34F0
+P 9150 2350
+F 0 "#PWR012" H 9150 2450 40  0001 C CNN
+F 1 "3V3" V 9150 2450 50  0000 L CNN
+F 2 "" H 9150 2350 60  0000 C CNN
+F 3 "" H 9150 2350 60  0000 C CNN
+	1    9150 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5F1F553B
+P 9050 2450
+F 0 "#PWR011" H 9050 2550 30  0001 C CNN
+F 1 "GND" H 9050 2350 30  0001 C CNN
+F 2 "" H 9050 2450 60  0000 C CNN
+F 3 "" H 9050 2450 60  0000 C CNN
+	1    9050 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 2450 9150 2450
+Wire Wire Line
+	9150 2600 3500 2600
+Text HLabel 3500 2600 0    50   Input ~ 0
+BACKLIGHT_PWM
+Wire Wire Line
+	3500 7550 7550 7550
+Wire Wire Line
+	7550 7550 7550 8800
+Wire Wire Line
+	11850 3150 11750 3150
+Wire Wire Line
+	11750 3150 11750 3250
+Wire Wire Line
+	11750 3350 11850 3350
+Wire Wire Line
+	11850 3250 11750 3250
+Connection ~ 11750 3250
+Wire Wire Line
+	11750 3250 11750 3350
+Wire Wire Line
+	11850 2950 11750 2950
+Wire Wire Line
+	11750 2950 11750 3000
+Wire Wire Line
+	11750 3050 11850 3050
+Connection ~ 11750 3000
+Wire Wire Line
+	11750 3000 11750 3050
+Wire Wire Line
+	11850 2150 11750 2150
+Wire Wire Line
+	11750 2150 11750 2250
+Wire Wire Line
+	11750 2650 11850 2650
+Wire Wire Line
+	11850 2550 11750 2550
+Connection ~ 11750 2550
+Wire Wire Line
+	11750 2550 11750 2650
+Wire Wire Line
+	11850 2450 11750 2450
+Connection ~ 11750 2450
+Wire Wire Line
+	11750 2450 11750 2550
+Wire Wire Line
+	11850 2350 11750 2350
+Connection ~ 11750 2350
+Wire Wire Line
+	11750 2350 11750 2400
+Wire Wire Line
+	11850 2250 11750 2250
+Connection ~ 11750 2250
+Wire Wire Line
+	11750 2250 11750 2350
+Wire Wire Line
+	11750 2400 10450 2400
+Connection ~ 11750 2400
+Wire Wire Line
+	11750 2400 11750 2450
+Text HLabel 3500 4050 0    50   Input ~ 0
+DISP_TE
+Wire Wire Line
+	3500 4050 11850 4050
+Text HLabel 3500 4150 0    50   Input ~ 0
+DISP_~CS~
+Wire Wire Line
+	3500 4150 11850 4150
+Text HLabel 3500 4250 0    50   Input ~ 0
+DISP_RS
+Wire Wire Line
+	3500 4250 11850 4250
+Text HLabel 3500 4350 0    50   Input ~ 0
+DISP_~WR~
+Wire Wire Line
+	3500 4350 11850 4350
+Text HLabel 3500 4450 0    50   Input ~ 0
+DISP_~RD~
+Wire Wire Line
+	3500 4450 11850 4450
+Text HLabel 3500 4550 0    50   Input ~ 0
+DISP_SDA
+Wire Wire Line
+	3500 4550 11850 4550
+Text HLabel 3500 4650 0    50   Output ~ 0
+DISP_SDO
+Wire Wire Line
+	3500 4650 11850 4650
+Text HLabel 3500 4750 0    50   Input ~ 0
+DISP_D0
+Wire Wire Line
+	3500 4750 11850 4750
+Text HLabel 3500 4850 0    50   Input ~ 0
+DISP_D1
+Wire Wire Line
+	3500 4850 11850 4850
+Text HLabel 3500 4950 0    50   Input ~ 0
+DISP_D2
+Wire Wire Line
+	3500 4950 11850 4950
+Text HLabel 3500 5050 0    50   Input ~ 0
+DISP_D3
+Wire Wire Line
+	3500 5050 11850 5050
+Text HLabel 3500 5150 0    50   Input ~ 0
+DISP_D4
+Wire Wire Line
+	3500 5150 11850 5150
+Text HLabel 3500 5250 0    50   Input ~ 0
+DISP_D5
+Wire Wire Line
+	3500 5250 11850 5250
+Text HLabel 3500 5350 0    50   Input ~ 0
+DISP_D6
+Wire Wire Line
+	3500 5350 11850 5350
+Text HLabel 3500 5450 0    50   Input ~ 0
+DISP_D7
+Wire Wire Line
+	3500 5450 11850 5450
+Text HLabel 3500 5550 0    50   Input ~ 0
+DISP_D8
+Wire Wire Line
+	3500 5550 11850 5550
+Text HLabel 3500 5650 0    50   Input ~ 0
+DISP_D9
+Wire Wire Line
+	3500 5650 11850 5650
+Text HLabel 3500 5750 0    50   Input ~ 0
+DISP_D10
+Wire Wire Line
+	3500 5750 11850 5750
+Text HLabel 3500 5850 0    50   Input ~ 0
+DISP_D11
+Wire Wire Line
+	3500 5850 11850 5850
+Text HLabel 3500 5950 0    50   Input ~ 0
+DISP_D12
+Wire Wire Line
+	3500 5950 11850 5950
+Text HLabel 3500 6050 0    50   Input ~ 0
+DISP_D13
+Wire Wire Line
+	3500 6050 11850 6050
+Text HLabel 3500 6150 0    50   Input ~ 0
+DISP_D14
+Wire Wire Line
+	3500 6150 11850 6150
+Text HLabel 3500 6250 0    50   Input ~ 0
+DISP_D15
+Wire Wire Line
+	3500 6250 11850 6250
+Text HLabel 3500 6350 0    50   Input ~ 0
+DISP_D16
+Wire Wire Line
+	3500 6350 11850 6350
+Text HLabel 3500 6450 0    50   Input ~ 0
+DISP_D17
+Wire Wire Line
+	3500 6450 11850 6450
+Text HLabel 3500 6550 0    50   Input ~ 0
+DISP_ENABLE
+Wire Wire Line
+	3500 6550 11850 6550
+Text HLabel 3500 6650 0    50   Input ~ 0
+DISP_DOTCLK
+Wire Wire Line
+	3500 6650 11850 6650
+Text HLabel 3500 6750 0    50   Input ~ 0
+DISP_HSYNC
+Wire Wire Line
+	3500 6750 11850 6750
+Text HLabel 3500 6850 0    50   Input ~ 0
+DISP_VSYNC
+Wire Wire Line
+	3500 6850 11850 6850
+Wire Wire Line
+	11750 3600 11850 3600
+$Comp
+L power:GND #PWR015
+U 1 1 5EF4B535
+P 11750 3800
+F 0 "#PWR015" H 11750 3900 30  0001 C CNN
+F 1 "GND" H 11750 3700 30  0001 C CNN
+F 2 "" H 11750 3800 60  0000 C CNN
+F 3 "" H 11750 3800 60  0000 C CNN
+	1    11750 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11750 3800 11850 3800
+Wire Wire Line
+	10450 2750 11850 2750
+Wire Wire Line
+	11750 3600 11750 3650
+Wire Wire Line
+	11750 3700 11850 3700
+Wire Wire Line
+	11350 3000 11550 3000
+Wire Wire Line
+	11750 3650 11550 3650
+Wire Wire Line
+	11550 3650 11550 3000
+Connection ~ 11750 3650
+Wire Wire Line
+	11750 3650 11750 3700
+Connection ~ 11550 3000
+Wire Wire Line
+	11550 3000 11750 3000
+Text HLabel 3500 6950 0    50   Input ~ 0
+DISP_~RESET~
+Wire Wire Line
+	3500 6950 11850 6950
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5F160434
+P 11450 3650
+F 0 "#FLG01" H 11450 3920 30  0001 C CNN
+F 1 "PWR_FLAG" V 11450 3878 30  0000 L CNN
+F 2 "" H 11450 3650 60  0000 C CNN
+F 3 "" H 11450 3650 60  0000 C CNN
+	1    11450 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11450 3650 11550 3650
+Connection ~ 11550 3650
+$Comp
+L Display_Lcd:maithoga_tft_480x320_rgb_with_resistive_ts DIS1
+U 1 1 5F068E6E
+P 13350 4800
+F 0 "DIS1" H 14578 4846 50  0000 L CNN
+F 1 "maithoga_rgb_with_resistive_ts" H 14578 4755 50  0000 L CNN
+F 2 "Display_Lcd:maithoga_tft_480x320_rgb_with_resistive_ts" H 13350 6550 60  0001 C CNN
+F 3 "" H 13350 6550 60  0000 C CNN
+	1    13350 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11850 7150 9900 7150
+Wire Wire Line
+	9900 7150 9900 9600
+Wire Wire Line
+	9900 9600 7000 9600
+Wire Wire Line
+	11850 7250 10050 7250
+Wire Wire Line
+	10050 7250 10050 9200
+Wire Wire Line
+	10050 9200 7000 9200
+Wire Wire Line
+	11850 7350 10200 7350
+Wire Wire Line
+	10200 7350 10200 9400
+Wire Wire Line
+	10200 9400 7000 9400
+Wire Wire Line
+	7000 9000 10350 9000
+Wire Wire Line
+	10350 9000 10350 7450
+Wire Wire Line
+	10350 7450 11850 7450
+$EndSCHEMATC
