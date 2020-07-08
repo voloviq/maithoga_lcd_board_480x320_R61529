@@ -398,6 +398,32 @@ X NC 5 450 -400 200 L 50 50 1 1 N
 ENDDRAW
 ENDDEF
 #
+# Resistors_Smd0603_0R_0603
+#
+DEF Resistors_Smd0603_0R_0603 R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Resistors_Smd0603_0R_0603" -100 0 50 V V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+F4 "ROYAL OHM" 0 0 50 H I C CNN "Manufacturer"
+F5 "0603SAJ0000T5E" 0 0 50 H I C CNN "Manufacturer Part Number"
+F6 "TME" 0 0 50 H I C CNN "Supplier"
+F7 "SMD0603-0R" 0 0 50 H I C CNN "Supplier Part Number"
+F8 "https://www.tme.eu/pl/details/smd0603-0r/rezystory-smd-0603/royal-ohm/0603saj0000t5e/" 0 0 50 H I C CNN "URL"
+F9 "0,03966" 0 0 50 H I C CNN "Price@1pc"
+F10 "0,00967" 0 0 50 H I C CNN "Price@1000pcs"
+F11 "0603" 0 0 50 H I C CNN "Package"
+$FPLIST
+ 0R_0603
+ 0R_pcb_0603_fashion
+$ENDFPLIST
+DRAW
+S -40 150 40 -150 0 1 0 f
+X ~ 1 0 250 100 D 60 60 1 1 P
+X ~ 2 0 -250 100 U 60 60 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Resistors_Smd0603_10R_0603
 #
 DEF Resistors_Smd0603_10R_0603 R 0 40 N Y 1 F N

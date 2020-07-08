@@ -515,39 +515,19 @@ Text HLabel 3500 6850 0    50   Input ~ 0
 DISP_VSYNC
 Wire Wire Line
 	3500 6850 11850 6850
-Wire Wire Line
-	11750 3600 11850 3600
 $Comp
 L power:GND #PWR015
 U 1 1 5EF4B535
-P 11750 3800
-F 0 "#PWR015" H 11750 3900 30  0001 C CNN
-F 1 "GND" H 11750 3700 30  0001 C CNN
-F 2 "" H 11750 3800 60  0000 C CNN
-F 3 "" H 11750 3800 60  0000 C CNN
-	1    11750 3800
+P 10100 3550
+F 0 "#PWR015" H 10100 3650 30  0001 C CNN
+F 1 "GND" H 10100 3450 30  0001 C CNN
+F 2 "" H 10100 3550 60  0000 C CNN
+F 3 "" H 10100 3550 60  0000 C CNN
+	1    10100 3550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11750 3800 11850 3800
-Wire Wire Line
 	10450 2750 10600 2750
-Wire Wire Line
-	11750 3600 11750 3650
-Wire Wire Line
-	11750 3700 11850 3700
-Wire Wire Line
-	11350 3000 11550 3000
-Wire Wire Line
-	11750 3650 11550 3650
-Wire Wire Line
-	11550 3650 11550 3000
-Connection ~ 11750 3650
-Wire Wire Line
-	11750 3650 11750 3700
-Connection ~ 11550 3000
-Wire Wire Line
-	11550 3000 11750 3000
 Text HLabel 3500 6950 0    50   Input ~ 0
 DISP_~RESET~
 Wire Wire Line
@@ -555,17 +535,14 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5F160434
-P 11450 3650
-F 0 "#FLG01" H 11450 3920 30  0001 C CNN
-F 1 "PWR_FLAG" V 11450 3878 30  0000 L CNN
-F 2 "" H 11450 3650 60  0000 C CNN
-F 3 "" H 11450 3650 60  0000 C CNN
-	1    11450 3650
-	0    -1   -1   0   
+P 11550 3000
+F 0 "#FLG01" H 11550 3270 30  0001 C CNN
+F 1 "PWR_FLAG" H 11700 3200 30  0000 L CNN
+F 2 "" H 11550 3000 60  0000 C CNN
+F 3 "" H 11550 3000 60  0000 C CNN
+	1    11550 3000
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	11450 3650 11550 3650
-Connection ~ 11550 3650
 $Comp
 L Display_Lcd:maithoga_tft_480x320_rgb_with_resistive_ts DIS1
 U 1 1 5F068E6E
@@ -653,4 +630,202 @@ F 3 "" H 11750 3350 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 11750 3350
+$Comp
+L Resistors_Smd0603:0R_0603 R?
+U 1 1 5F075722
+P 11450 3400
+F 0 "R?" H 11518 3446 50  0000 L CNN
+F 1 "0R" H 11518 3355 50  0000 L CNN
+F 2 "" H 11450 3400 60  0001 C CNN
+F 3 "Resistors/Smd_0603/Components_Documentation/Vishay_Resistors_SM0603.pdf" H 11450 3400 60  0001 C CNN
+F 4 "ROYAL OHM" H 11450 3400 50  0001 C CNN "Manufacturer"
+F 5 "0603SAJ0000T5E" H 11450 3400 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TME" H 11450 3400 50  0001 C CNN "Supplier"
+F 7 "SMD0603-0R" H 11450 3400 50  0001 C CNN "Supplier Part Number"
+F 8 "https://www.tme.eu/pl/details/smd0603-0r/rezystory-smd-0603/royal-ohm/0603saj0000t5e/" H 11450 3400 50  0001 C CNN "URL"
+F 9 "0,03966" H 11450 3400 50  0001 C CNN "Price@1pc"
+F 10 "0,00967" H 11450 3400 50  0001 C CNN "Price@1000pcs"
+F 11 "0603" H 11450 3400 50  0001 C CNN "Package"
+	1    11450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors_Smd0603:0R_0603 R?
+U 1 1 5F077563
+P 11200 3400
+F 0 "R?" H 11268 3446 50  0000 L CNN
+F 1 "0R" H 11268 3355 50  0000 L CNN
+F 2 "" H 11200 3400 60  0001 C CNN
+F 3 "Resistors/Smd_0603/Components_Documentation/Vishay_Resistors_SM0603.pdf" H 11200 3400 60  0001 C CNN
+F 4 "ROYAL OHM" H 11200 3400 50  0001 C CNN "Manufacturer"
+F 5 "0603SAJ0000T5E" H 11200 3400 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TME" H 11200 3400 50  0001 C CNN "Supplier"
+F 7 "SMD0603-0R" H 11200 3400 50  0001 C CNN "Supplier Part Number"
+F 8 "https://www.tme.eu/pl/details/smd0603-0r/rezystory-smd-0603/royal-ohm/0603saj0000t5e/" H 11200 3400 50  0001 C CNN "URL"
+F 9 "0,03966" H 11200 3400 50  0001 C CNN "Price@1pc"
+F 10 "0,00967" H 11200 3400 50  0001 C CNN "Price@1000pcs"
+F 11 "0603" H 11200 3400 50  0001 C CNN "Package"
+	1    11200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors_Smd0603:0R_0603 R?
+U 1 1 5F07DB90
+P 10950 3400
+F 0 "R?" H 11018 3446 50  0000 L CNN
+F 1 "0R_NA" H 10650 3450 50  0000 L CNN
+F 2 "" H 10950 3400 60  0001 C CNN
+F 3 "Resistors/Smd_0603/Components_Documentation/Vishay_Resistors_SM0603.pdf" H 10950 3400 60  0001 C CNN
+F 4 "ROYAL OHM" H 10950 3400 50  0001 C CNN "Manufacturer"
+F 5 "0603SAJ0000T5E" H 10950 3400 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TME" H 10950 3400 50  0001 C CNN "Supplier"
+F 7 "SMD0603-0R" H 10950 3400 50  0001 C CNN "Supplier Part Number"
+F 8 "https://www.tme.eu/pl/details/smd0603-0r/rezystory-smd-0603/royal-ohm/0603saj0000t5e/" H 10950 3400 50  0001 C CNN "URL"
+F 9 "0,03966" H 10950 3400 50  0001 C CNN "Price@1pc"
+F 10 "0,00967" H 10950 3400 50  0001 C CNN "Price@1000pcs"
+F 11 "0603" H 10950 3400 50  0001 C CNN "Package"
+	1    10950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11350 3000 11550 3000
+Connection ~ 11550 3000
+Wire Wire Line
+	11550 3000 11750 3000
+Wire Wire Line
+	11850 3600 11600 3600
+Wire Wire Line
+	11600 3600 11600 3700
+Wire Wire Line
+	11600 3700 11450 3700
+Wire Wire Line
+	11450 3700 11450 3650
+Wire Wire Line
+	11850 3700 11650 3700
+Wire Wire Line
+	11650 3700 11650 3750
+Wire Wire Line
+	11650 3750 11200 3750
+Wire Wire Line
+	11200 3750 11200 3650
+Wire Wire Line
+	11850 3800 10950 3800
+Wire Wire Line
+	10950 3800 10950 3650
+$Comp
+L Resistors_Smd0603:0R_0603 R?
+U 1 1 5F0A0296
+P 10450 3950
+F 0 "R?" V 10350 3950 50  0000 C CNN
+F 1 "0R" V 10450 3950 50  0000 C CNN
+F 2 "" H 10450 3950 60  0001 C CNN
+F 3 "Resistors/Smd_0603/Components_Documentation/Vishay_Resistors_SM0603.pdf" H 10450 3950 60  0001 C CNN
+F 4 "ROYAL OHM" H 10450 3950 50  0001 C CNN "Manufacturer"
+F 5 "0603SAJ0000T5E" H 10450 3950 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TME" H 10450 3950 50  0001 C CNN "Supplier"
+F 7 "SMD0603-0R" H 10450 3950 50  0001 C CNN "Supplier Part Number"
+F 8 "https://www.tme.eu/pl/details/smd0603-0r/rezystory-smd-0603/royal-ohm/0603saj0000t5e/" H 10450 3950 50  0001 C CNN "URL"
+F 9 "0,03966" H 10450 3950 50  0001 C CNN "Price@1pc"
+F 10 "0,00967" H 10450 3950 50  0001 C CNN "Price@1000pcs"
+F 11 "0603" H 10450 3950 50  0001 C CNN "Package"
+	1    10450 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors_Smd0603:0R_0603 R?
+U 1 1 5F0A15D6
+P 10450 3750
+F 0 "R?" V 10350 3750 50  0000 C CNN
+F 1 "0R_NA" V 10450 3750 50  0000 C CNN
+F 2 "" H 10450 3750 60  0001 C CNN
+F 3 "Resistors/Smd_0603/Components_Documentation/Vishay_Resistors_SM0603.pdf" H 10450 3750 60  0001 C CNN
+F 4 "ROYAL OHM" H 10450 3750 50  0001 C CNN "Manufacturer"
+F 5 "0603SAJ0000T5E" H 10450 3750 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TME" H 10450 3750 50  0001 C CNN "Supplier"
+F 7 "SMD0603-0R" H 10450 3750 50  0001 C CNN "Supplier Part Number"
+F 8 "https://www.tme.eu/pl/details/smd0603-0r/rezystory-smd-0603/royal-ohm/0603saj0000t5e/" H 10450 3750 50  0001 C CNN "URL"
+F 9 "0,03966" H 10450 3750 50  0001 C CNN "Price@1pc"
+F 10 "0,00967" H 10450 3750 50  0001 C CNN "Price@1000pcs"
+F 11 "0603" H 10450 3750 50  0001 C CNN "Package"
+	1    10450 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistors_Smd0603:0R_0603 R?
+U 1 1 5F0A7246
+P 10450 3550
+F 0 "R?" V 10350 3550 50  0000 C CNN
+F 1 "0R_NA" V 10450 3550 50  0000 C CNN
+F 2 "" H 10450 3550 60  0001 C CNN
+F 3 "Resistors/Smd_0603/Components_Documentation/Vishay_Resistors_SM0603.pdf" H 10450 3550 60  0001 C CNN
+F 4 "ROYAL OHM" H 10450 3550 50  0001 C CNN "Manufacturer"
+F 5 "0603SAJ0000T5E" H 10450 3550 50  0001 C CNN "Manufacturer Part Number"
+F 6 "TME" H 10450 3550 50  0001 C CNN "Supplier"
+F 7 "SMD0603-0R" H 10450 3550 50  0001 C CNN "Supplier Part Number"
+F 8 "https://www.tme.eu/pl/details/smd0603-0r/rezystory-smd-0603/royal-ohm/0603saj0000t5e/" H 10450 3550 50  0001 C CNN "URL"
+F 9 "0,03966" H 10450 3550 50  0001 C CNN "Price@1pc"
+F 10 "0,00967" H 10450 3550 50  0001 C CNN "Price@1000pcs"
+F 11 "0603" H 10450 3550 50  0001 C CNN "Package"
+	1    10450 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10950 3800 10950 3950
+Wire Wire Line
+	10950 3950 10700 3950
+Connection ~ 10950 3800
+Wire Wire Line
+	11200 3750 10700 3750
+Connection ~ 11200 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5F0BE62E
+P 10100 3950
+F 0 "#PWR?" H 10100 4050 30  0001 C CNN
+F 1 "GND" H 10100 3850 30  0001 C CNN
+F 2 "" H 10100 3950 60  0000 C CNN
+F 3 "" H 10100 3950 60  0000 C CNN
+	1    10100 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F0C5042
+P 10100 3750
+F 0 "#PWR?" H 10100 3850 30  0001 C CNN
+F 1 "GND" H 10100 3650 30  0001 C CNN
+F 2 "" H 10100 3750 60  0000 C CNN
+F 3 "" H 10100 3750 60  0000 C CNN
+	1    10100 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10200 3950 10100 3950
+Wire Wire Line
+	10200 3750 10100 3750
+Wire Wire Line
+	10200 3550 10100 3550
+Wire Wire Line
+	11450 3700 10800 3700
+Wire Wire Line
+	10800 3700 10800 3550
+Wire Wire Line
+	10800 3550 10700 3550
+Connection ~ 11450 3700
+Wire Wire Line
+	10950 3150 10950 3100
+Wire Wire Line
+	10950 3100 11200 3100
+Wire Wire Line
+	11450 3100 11450 3150
+Wire Wire Line
+	11200 3150 11200 3100
+Connection ~ 11200 3100
+Wire Wire Line
+	11200 3100 11450 3100
+Wire Wire Line
+	11550 3000 11550 3100
+Wire Wire Line
+	11550 3100 11450 3100
+Connection ~ 11450 3100
 $EndSCHEMATC
