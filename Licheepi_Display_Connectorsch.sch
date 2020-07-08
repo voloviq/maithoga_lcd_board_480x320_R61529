@@ -22,7 +22,7 @@ F 1 "LicheePi_Con" H 9528 5492 60  0000 L CNN
 F 2 "Fpc_Connectors:40pin_fpc_top_0_5mm" H 9400 7050 60  0001 C CNN
 F 3 "Connectors/Fpc_Connectors/Components_Documentation/ZIFNZ0140CV-TR.pdf" H 9528 5439 60  0001 L CNN
 	1    9300 5550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9050 3600 6400 3600
