@@ -421,11 +421,9 @@ Text HLabel 3500 4450 0    50   Input ~ 0
 DISP_~RD~
 Wire Wire Line
 	3500 4450 11850 4450
-Text HLabel 3500 4550 0    50   Input ~ 0
-DISP_SDA
 Wire Wire Line
 	3500 4550 11850 4550
-Text HLabel 3500 4650 0    50   Output ~ 0
+Text HLabel 3500 4650 0    50   Input ~ 0
 DISP_SDO
 Wire Wire Line
 	3500 4650 11850 4650
@@ -641,4 +639,18 @@ Text HLabel 3500 2050 0    50   Input ~ 0
 LCD_LED_K
 Text HLabel 3500 3100 0    50   Input ~ 0
 LCD_LED_A
+Text HLabel 3500 4550 0    50   Input ~ 0
+DISP_SDA
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F134E91
+P 11750 3350
+F 0 "#FLG0101" H 11750 3620 30  0001 C CNN
+F 1 "PWR_FLAG" H 11450 3450 30  0000 L CNN
+F 2 "" H 11750 3350 60  0000 C CNN
+F 3 "" H 11750 3350 60  0000 C CNN
+	1    11750 3350
+	-1   0    0    1   
+$EndComp
+Connection ~ 11750 3350
 $EndSCHEMATC

@@ -184,4 +184,47 @@ Wire Wire Line
 	7900 6550 7750 6550
 Wire Wire Line
 	7900 6650 7750 6650
+$Comp
+L Goldpin_2_54mm:GOLDPIN_4_2_2_54MM P3
+U 1 1 5F09FA54
+P 8300 7350
+F 0 "P3" H 8300 7737 60  0000 C CNN
+F 1 "TouchXY Connector" H 8300 7631 60  0000 C CNN
+F 2 "Goldpin:Goldpin_4_2_2_54mm_SMT" H 9600 7950 60  0001 C CNN
+F 3 "Goldpins/Components_Documentation/Goldpin_2_54mm.pdf" H 8300 7631 60  0001 C CNN
+	1    8300 7350
+	1    0    0    -1  
+$EndComp
+Text HLabel 7750 7200 0    50   Output ~ 0
+VIN_3V3
+Wire Wire Line
+	7900 7200 7750 7200
+Text HLabel 8850 7200 2    50   Output ~ 0
+VIN_GND
+Wire Wire Line
+	8850 7200 8700 7200
+Text HLabel 8850 7300 2    50   Input ~ 0
+X-
+Wire Wire Line
+	8850 7300 8700 7300
+Text HLabel 7750 7300 0    50   Input ~ 0
+X+
+Wire Wire Line
+	7900 7300 7750 7300
+Text HLabel 8850 7400 2    50   Input ~ 0
+Y-
+Wire Wire Line
+	8850 7400 8700 7400
+Text HLabel 7750 7400 0    50   Input ~ 0
+Y+
+Wire Wire Line
+	7900 7400 7750 7400
+Wire Wire Line
+	8850 7500 8700 7500
+Text HLabel 7750 7500 0    50   Output ~ 0
+VIN_GND
+Wire Wire Line
+	7750 7500 7900 7500
+Text HLabel 8850 7500 2    50   Output ~ 0
+VIN_3V3
 $EndSCHEMATC
