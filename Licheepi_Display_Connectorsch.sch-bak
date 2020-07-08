@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 5
+Sheet 5 5
 Title "Fpc Display Connector compatible wih Lichee Pi "
 Date "2020-07-08"
 Rev "V1.0"
@@ -16,12 +16,286 @@ $EndDescr
 $Comp
 L Fpc_Connectors:40pin_fpc_top_0_5mm P2
 U 1 1 5F07175D
-P 7750 6100
-F 0 "P2" H 7978 6148 60  0000 L CNN
-F 1 "40pin_fpc_top_0_5mm" H 7978 6042 60  0000 L CNN
-F 2 "Fpc_Connectors:40pin_fpc_top_0_5mm" H 7850 7600 60  0001 C CNN
-F 3 "Connectors/Fpc_Connectors/Components_Documentation/ZIFNZ0140CV-TR.pdf" H 7978 5989 60  0001 L CNN
-	1    7750 6100
+P 9300 5550
+F 0 "P2" H 9528 5598 60  0000 L CNN
+F 1 "LicheePi_Con" H 9528 5492 60  0000 L CNN
+F 2 "Fpc_Connectors:40pin_fpc_top_0_5mm" H 9400 7050 60  0001 C CNN
+F 3 "Connectors/Fpc_Connectors/Components_Documentation/ZIFNZ0140CV-TR.pdf" H 9528 5439 60  0001 L CNN
+	1    9300 5550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9050 3600 6400 3600
+Text HLabel 6400 3600 0    50   Output ~ 0
+VLED-
+Wire Wire Line
+	9050 3700 6400 3700
+Text HLabel 6400 3700 0    50   Output ~ 0
+VLED+
+Wire Wire Line
+	9050 3800 6400 3800
+Wire Wire Line
+	9050 3900 6400 3900
+$Comp
+L power:GND #PWR0101
+U 1 1 5F0D68CB
+P 6400 3800
+F 0 "#PWR0101" H 6400 3900 30  0001 C CNN
+F 1 "GND" H 6400 3700 30  0001 C CNN
+F 2 "" H 6400 3800 60  0000 C CNN
+F 3 "" H 6400 3800 60  0000 C CNN
+	1    6400 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:3V3 #PWR0102
+U 1 1 5F0D6B26
+P 6400 3900
+F 0 "#PWR0102" H 6400 4000 40  0001 C CNN
+F 1 "3V3" V 6400 4000 50  0000 L CNN
+F 2 "" H 6400 3900 60  0000 C CNN
+F 3 "" H 6400 3900 60  0000 C CNN
+	1    6400 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 4000 8950 4000
+Wire Wire Line
+	8950 4000 8950 4050
+Wire Wire Line
+	8950 4100 9050 4100
+Wire Wire Line
+	8950 4050 6400 4050
+Connection ~ 8950 4050
+Wire Wire Line
+	8950 4050 8950 4100
+$Comp
+L power:GND #PWR0103
+U 1 1 5F0D7950
+P 6400 4050
+F 0 "#PWR0103" H 6400 4150 30  0001 C CNN
+F 1 "GND" H 6400 3950 30  0001 C CNN
+F 2 "" H 6400 4050 60  0000 C CNN
+F 3 "" H 6400 4050 60  0000 C CNN
+	1    6400 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 4200 6400 4200
+Wire Wire Line
+	9050 4300 6400 4300
+Wire Wire Line
+	9050 4400 6400 4400
+Wire Wire Line
+	9050 4500 6400 4500
+Wire Wire Line
+	9050 4600 6400 4600
+Wire Wire Line
+	9050 4700 6400 4700
+Wire Wire Line
+	9050 4800 8950 4800
+Wire Wire Line
+	8950 4800 8950 4850
+Wire Wire Line
+	8950 4900 9050 4900
+Wire Wire Line
+	8950 4850 6400 4850
+Connection ~ 8950 4850
+Wire Wire Line
+	8950 4850 8950 4900
+$Comp
+L power:GND #PWR0104
+U 1 1 5F0DAA90
+P 6400 4850
+F 0 "#PWR0104" H 6400 4950 30  0001 C CNN
+F 1 "GND" H 6400 4750 30  0001 C CNN
+F 2 "" H 6400 4850 60  0000 C CNN
+F 3 "" H 6400 4850 60  0000 C CNN
+	1    6400 4850
+	0    1    1    0   
+$EndComp
+Text HLabel 6400 4200 0    50   Output ~ 0
+LCD_R2
+Text HLabel 6400 4300 0    50   Output ~ 0
+LCD_R3
+Text HLabel 6400 4400 0    50   Output ~ 0
+LCD_R4
+Text HLabel 6400 4500 0    50   Output ~ 0
+LCD_R5
+Text HLabel 6400 4600 0    50   Output ~ 0
+LCD_R6
+Text HLabel 6400 4700 0    50   Output ~ 0
+LCD_R7
+Wire Wire Line
+	9050 5000 6400 5000
+Wire Wire Line
+	9050 5100 6400 5100
+Wire Wire Line
+	9050 5200 6400 5200
+Wire Wire Line
+	9050 5300 6400 5300
+Wire Wire Line
+	9050 5400 6400 5400
+Wire Wire Line
+	9050 5500 6400 5500
+Text HLabel 6400 5000 0    50   Output ~ 0
+LCD_G2
+Text HLabel 6400 5100 0    50   Output ~ 0
+LCD_G3
+Text HLabel 6400 5200 0    50   Output ~ 0
+LCD_G4
+Text HLabel 6400 5300 0    50   Output ~ 0
+LCD_G5
+Text HLabel 6400 5400 0    50   Output ~ 0
+LCD_G6
+Text HLabel 6400 5500 0    50   Output ~ 0
+LCD_G7
+Wire Wire Line
+	9050 5600 8950 5600
+Wire Wire Line
+	8950 5600 8950 5650
+Wire Wire Line
+	8950 5700 9050 5700
+Wire Wire Line
+	8950 5650 6400 5650
+Connection ~ 8950 5650
+Wire Wire Line
+	8950 5650 8950 5700
+$Comp
+L power:GND #PWR0105
+U 1 1 5F0E2A62
+P 6400 5650
+F 0 "#PWR0105" H 6400 5750 30  0001 C CNN
+F 1 "GND" H 6400 5550 30  0001 C CNN
+F 2 "" H 6400 5650 60  0000 C CNN
+F 3 "" H 6400 5650 60  0000 C CNN
+	1    6400 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 5800 6400 5800
+Wire Wire Line
+	9050 5900 6400 5900
+Wire Wire Line
+	9050 6000 6400 6000
+Wire Wire Line
+	9050 6100 6400 6100
+Wire Wire Line
+	9050 6200 6400 6200
+Wire Wire Line
+	9050 6300 6400 6300
+Text HLabel 6400 5800 0    50   Output ~ 0
+LCD_B2
+Text HLabel 6400 5900 0    50   Output ~ 0
+LCD_B3
+Text HLabel 6400 6000 0    50   Output ~ 0
+LCD_B4
+Text HLabel 6400 6100 0    50   Output ~ 0
+LCD_B5
+Text HLabel 6400 6200 0    50   Output ~ 0
+LCD_B6
+Text HLabel 6400 6300 0    50   Output ~ 0
+LCD_B7
+Wire Wire Line
+	9050 6400 6400 6400
+$Comp
+L power:GND #PWR0106
+U 1 1 5F0E67A5
+P 6400 6400
+F 0 "#PWR0106" H 6400 6500 30  0001 C CNN
+F 1 "GND" H 6400 6300 30  0001 C CNN
+F 2 "" H 6400 6400 60  0000 C CNN
+F 3 "" H 6400 6400 60  0000 C CNN
+	1    6400 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 6500 6400 6500
+Text HLabel 6400 6500 0    50   Output ~ 0
+LCD_CLK
+Wire Wire Line
+	9050 6600 6400 6600
+$Comp
+L power:3V3 #PWR0107
+U 1 1 5F0E86D7
+P 6400 6600
+F 0 "#PWR0107" H 6400 6700 40  0001 C CNN
+F 1 "3V3" V 6400 6700 50  0000 L CNN
+F 2 "" H 6400 6600 60  0000 C CNN
+F 3 "" H 6400 6600 60  0000 C CNN
+	1    6400 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 6700 6400 6700
+Wire Wire Line
+	9050 6800 6400 6800
+Wire Wire Line
+	9050 6900 6400 6900
+Text HLabel 6400 6700 0    50   Output ~ 0
+LCD_HSYNC
+Text HLabel 6400 6800 0    50   Output ~ 0
+LCD_VSYNC
+Text HLabel 6400 6900 0    50   Output ~ 0
+LCD_DE
+NoConn ~ 9050 7000
+Wire Wire Line
+	9050 7100 6400 7100
+$Comp
+L power:GND #PWR0108
+U 1 1 5F0EF4AE
+P 6400 7100
+F 0 "#PWR0108" H 6400 7200 30  0001 C CNN
+F 1 "GND" H 6400 7000 30  0001 C CNN
+F 2 "" H 6400 7100 60  0000 C CNN
+F 3 "" H 6400 7100 60  0000 C CNN
+	1    6400 7100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 7200 6400 7200
+Wire Wire Line
+	9050 7300 6400 7300
+Wire Wire Line
+	9050 7400 6400 7400
+Wire Wire Line
+	9050 7500 6400 7500
+Text HLabel 6400 7200 0    50   Output ~ 0
+TPX1
+Text HLabel 6400 7300 0    50   Output ~ 0
+TPY1
+Text HLabel 6400 7400 0    50   Output ~ 0
+TPX2
+Text HLabel 6400 7500 0    50   Output ~ 0
+TPY2
+Text HLabel 6400 3050 0    50   Output ~ 0
+POWER_OUT_3V3
+Text HLabel 6400 3150 0    50   Output ~ 0
+POWER_OUT_3V3_GND
+$Comp
+L power:3V3 #PWR0109
+U 1 1 5F0F8239
+P 6500 3050
+F 0 "#PWR0109" H 6500 3150 40  0001 C CNN
+F 1 "3V3" V 6500 3150 50  0000 L CNN
+F 2 "" H 6500 3050 60  0000 C CNN
+F 3 "" H 6500 3050 60  0000 C CNN
+	1    6500 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F0F9896
+P 6500 3150
+F 0 "#PWR0110" H 6500 3250 30  0001 C CNN
+F 1 "GND" H 6500 3050 30  0001 C CNN
+F 2 "" H 6500 3150 60  0000 C CNN
+F 3 "" H 6500 3150 60  0000 C CNN
+	1    6500 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 3050 6400 3050
+Wire Wire Line
+	6400 3150 6500 3150
 $EndSCHEMATC
