@@ -221,10 +221,10 @@ Wire Wire Line
 	7900 7400 7750 7400
 Wire Wire Line
 	8850 7500 8700 7500
-Text HLabel 7750 7500 0    50   Output ~ 0
+Text HLabel 8850 7500 2    50   Output ~ 0
 VIN_GND
 Wire Wire Line
 	7750 7500 7900 7500
-Text HLabel 8850 7500 2    50   Output ~ 0
+Text HLabel 7750 7500 0    50   Output ~ 0
 VIN_3V3
 $EndSCHEMATC
