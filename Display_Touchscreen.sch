@@ -548,6 +548,20 @@ Wire Wire Line
 Wire Wire Line
 	11550 3100 11450 3100
 Connection ~ 11450 3100
+Wire Wire Line
+	3500 7350 11850 7350
+Wire Wire Line
+	3500 7450 11850 7450
+Wire Wire Line
+	3500 7550 11850 7550
+Wire Wire Line
+	3500 7650 11850 7650
+Text HLabel 3500 7550 0    50   Output ~ 0
+TOUCHSCREEN_INT
+Text HLabel 3500 7650 0    50   Input ~ 0
+TOUCHSCREEN_RST
+Text HLabel 3500 7750 0    50   Input ~ 0
+TOUCHSCREEN_GND
 $Comp
 L Display_Lcd:maithoga_tft_480x320_rgb_with_capacitive_ts DIS1
 U 1 1 5F37BBCB
@@ -560,21 +574,7 @@ F 3 "" H 13350 6850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 7250 11850 7250
-Wire Wire Line
-	3500 7350 11850 7350
-Wire Wire Line
-	3500 7450 11850 7450
-Wire Wire Line
-	3500 7550 11850 7550
-Wire Wire Line
-	3500 7650 11850 7650
-Wire Wire Line
 	3500 7750 11850 7750
-Text HLabel 3500 7550 0    50   BiDi ~ 0
-TOUCHSCREEN_INT
-Text HLabel 3500 7650 0    50   Input ~ 0
-TOUCHSCREEN_RST
-Text HLabel 3500 7750 0    50   Input ~ 0
-TOUCHSCREEN_GND
+Wire Wire Line
+	3500 7250 11850 7250
 $EndSCHEMATC

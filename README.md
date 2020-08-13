@@ -6,3 +6,5 @@ Access to display signal is possible with goldpin described below and fpc compat
 Display view
 
 ![Display_View](display_view.jpg)
+
+![PCB_View](display_pcb_view.png)
