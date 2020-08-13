@@ -239,35 +239,6 @@ LCD_VSYNC
 Text HLabel 6400 6900 0    50   Output ~ 0
 LCD_DE
 NoConn ~ 9050 7000
-Wire Wire Line
-	9050 7100 6400 7100
-$Comp
-L power:GND #PWR0108
-U 1 1 5F0EF4AE
-P 6400 7100
-F 0 "#PWR0108" H 6400 7200 30  0001 C CNN
-F 1 "GND" H 6400 7000 30  0001 C CNN
-F 2 "" H 6400 7100 60  0000 C CNN
-F 3 "" H 6400 7100 60  0000 C CNN
-	1    6400 7100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9050 7200 6400 7200
-Wire Wire Line
-	9050 7300 6400 7300
-Wire Wire Line
-	9050 7400 6400 7400
-Wire Wire Line
-	9050 7500 6400 7500
-Text HLabel 6400 7200 0    50   Output ~ 0
-TPX1
-Text HLabel 6400 7300 0    50   Output ~ 0
-TPY1
-Text HLabel 6400 7400 0    50   Output ~ 0
-TPX2
-Text HLabel 6400 7500 0    50   Output ~ 0
-TPY2
 Text HLabel 6400 3050 0    50   Output ~ 0
 POWER_OUT_3V3
 Text HLabel 6400 3150 0    50   Output ~ 0
@@ -314,4 +285,17 @@ Wire Wire Line
 Connection ~ 6450 3050
 Wire Wire Line
 	6450 3050 6400 3050
+$Comp
+L power:GND #PWR0108
+U 1 1 5F0EF4AE
+P 6400 7100
+F 0 "#PWR0108" H 6400 7200 30  0001 C CNN
+F 1 "GND" H 6400 7000 30  0001 C CNN
+F 2 "" H 6400 7100 60  0000 C CNN
+F 3 "" H 6400 7100 60  0000 C CNN
+	1    6400 7100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 7100 6400 7100
 $EndSCHEMATC

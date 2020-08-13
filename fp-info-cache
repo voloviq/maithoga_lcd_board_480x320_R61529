@@ -1,4 +1,4 @@
-607106999996772
+621192117279772
 Capacitors_Smd_0603
 1.2pF_GRM0335C1H1R2WA01D
 muRata SMD SM0603
@@ -742,6 +742,13 @@ Diode
 32
 32
 Diodes
+LED_Layer_x16_Discrete_3mm_pitch_10mm
+
+Diode
+0
+32
+32
+Diodes
 LED_WWH_PLCC6_SMD
 
 
@@ -836,6 +843,13 @@ Diodes
 PMEG2015EA
 
 
+0
+2
+2
+Diodes
+RB521S30T1G
+Schottky Diode 30V 200mA
+Diode SOD523
 0
 2
 2
@@ -1063,6 +1077,13 @@ Display
 0
 47
 46
+Display_Lcd
+maithoga_tft_480x320_rgb_with_capacitive_ts
+Nokia 5110_3310_Module
+Display
+0
+55
+52
 Display_Lcd
 maithoga_tft_480x320_rgb_with_resistive_ts
 Nokia 5110_3310_Module
@@ -1315,6 +1336,20 @@ connector Hirose  top entry
 0
 26
 25
+Fpc_Connectors
+Molex_52806-0810
+Molex 0.50mm Pitch Easy-On Type FFC/FPC Connector, For LVDS, 2.33mm Height, Right Angle, Surface Mount, ZIF, Bottom Contact Style, 24 Circuits (http://www.molex.com/pdm_docs/sd/5022441530_sd.pdf)
+molex FFC/FPC connector Pitch 0.5mm right angle
+0
+8
+8
+Fpc_Connectors
+Molex_52806-2410
+Molex 0.50mm Pitch Easy-On Type FFC/FPC Connector, For LVDS, 2.33mm Height, Right Angle, Surface Mount, ZIF, Bottom Contact Style, 24 Circuits (http://www.molex.com/pdm_docs/sd/5022441530_sd.pdf)
+molex FFC/FPC connector Pitch 0.5mm right angle
+0
+24
+24
 Fpc_Connectors
 Molex_502244-2430_1x24-1MP_P0.5mm_Horizontal
 Molex 0.50mm Pitch Easy-On Type FFC/FPC Connector, For LVDS, 2.33mm Height, Right Angle, Surface Mount, ZIF, Bottom Contact Style, 24 Circuits (http://www.molex.com/pdm_docs/sd/5022441530_sd.pdf)
@@ -1659,6 +1694,13 @@ BLM18HE102SN1D
 2
 2
 Inductors
+BLM18KG121TN1D
+
+
+0
+2
+2
+Inductors
 BLM18PG121SN1D_SM0603
 
 
@@ -1924,6 +1966,13 @@ SRN6045TA-220M-22uH
 0
 2
 2
+Inductors
+WLPN242410N1R0PB
+WLPN242410 Series Shielded SMD Power Inductors 
+SMD Inductor
+0
+2
+2
 Lcd_Backlight_Drivers
 DIO5661ST6
 
@@ -2171,6 +2220,13 @@ Resistor
 2
 Resistor_Smd_0603
 6k49_0603
+Vishay SMD SM0603
+Resistor
+0
+2
+2
+Resistor_Smd_0603
+7k5_0603
 Vishay SMD SM0603
 Resistor
 0
@@ -2457,6 +2513,13 @@ Resistor
 2
 2
 Resistor_Smd_0603
+95k3_0603
+Vishay SMD SM0603
+Resistor
+0
+2
+2
+Resistor_Smd_0603
 100R_0603
 Vishay SMD SM0603
 Resistor
@@ -2507,6 +2570,13 @@ Resistor
 2
 Resistor_Smd_0603
 150k_0603
+Vishay SMD SM0603
+Resistor
+0
+2
+2
+Resistor_Smd_0603
+160k_0603
 Vishay SMD SM0603
 Resistor
 0
